@@ -1,0 +1,8 @@
+#material: 1.0 0.0 1.0 0.0 air
+#material: 1.0 0.0 1.0 0.0 void
+#material: 5.0 0.002 1 0 sand
+#material: 9 0.002 1.0 0.0 sub_base
+#material: 4.8 0.001 1.0 0.0 road_base
+#material: 4.6 0.001 1.0 0.0 base_course
+#material: 3.6 0.001 1.0 0.0 wearing_course
+
