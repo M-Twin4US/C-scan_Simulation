@@ -11,7 +11,7 @@ Scripts are provided to demonstrate a grid survey simulation of a multi-layer pa
 The steps to reproduce the simulations are outlined below. This method can be adapted to other models or use cases with similar needs.
 
 
-## 1. Digital Modeling
+## 1. Digital modeling
 
 The model can be created manually or via parametric modeling in Rhino 3D (`void.3dm`). In this case, a parametric model was used to construct a digital pavement with four layers:
 
@@ -26,7 +26,7 @@ The ground material is set as sand, and a void of 1 m diameter is embedded in it
 
 ---
 
-## 2. Run the Grasshopper Script for Grid Slicing
+## 2. Run the Grasshopper script for grid slicing
 
 In a GPR grid survey, each B-scan simulation requires a corresponding 2D or 3D cross-section geometry file in HDF5 (`.h5`) format. Generating these files manually for complex geometries is not intuitive or efficient.
 
@@ -43,15 +43,15 @@ The **step interval** (i.e., distance between slices) can be adjusted by the use
 
 ---
 
-## 3. Convert Grasshopper Output to HDF5 Files
+## 3. Convert Grasshopper output to HDF5 files
 
 The sliced cross-sections are saved as spreadsheet files, which need to be converted into `.h5` format for compatibility with gprMax.
 
-A Python script (`convert_gh_to_h5.py`) is provided as a reference for this conversion process.
+A Python script (`gh_output_to_hdf5.py`) is provided as a reference for this conversion process.
 
 ---
 
-## 4. Prepare Simulation Input Files and Run Simulations
+## 4. Prepare simulation input files and run simulations
 
 The simulation input files can be generated in bulk using Python or other scripting languages. This involves creating:
 
