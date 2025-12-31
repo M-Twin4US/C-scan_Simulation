@@ -1,0 +1,35 @@
+#material: 1 inf 1 0 pec
+#material: 1 0 1 0 free_space
+#material: 3.6 0.001 1 0 wearing_course
+#material: 4.6 0.001 1 0 base_course
+#material: 4.8 0.001 1 0 road_base
+#material: 9 0.002 1 0 sub_base
+#material: 1.6 1e-05 1 0 PE
+#material: 80 0 1 0 water
+#material: 3.90207 0.0161266 1 0 |my_fractal_box_01|
+#add_dispersion_debye: 1 0.0766466 9.231e-12 |my_fractal_box_01|
+#material: 4.31568 0.0198692 1 0 |my_fractal_box_02|
+#add_dispersion_debye: 1 0.232563 9.231e-12 |my_fractal_box_02|
+#material: 4.65691 0.0221344 1 0 |my_fractal_box_03|
+#add_dispersion_debye: 1 0.412951 9.231e-12 |my_fractal_box_03|
+#material: 4.95926 0.0238188 1 0 |my_fractal_box_04|
+#add_dispersion_debye: 1 0.609961 9.231e-12 |my_fractal_box_04|
+#material: 5.23575 0.025181 1 0 |my_fractal_box_05|
+#add_dispersion_debye: 1 0.819902 9.231e-12 |my_fractal_box_05|
+#material: 5.49326 0.0263351 1 0 |my_fractal_box_06|
+#add_dispersion_debye: 1 1.04056 9.231e-12 |my_fractal_box_06|
+#material: 5.736 0.0273423 1 0 |my_fractal_box_07|
+#add_dispersion_debye: 1 1.27043 9.231e-12 |my_fractal_box_07|
+#material: 5.96679 0.0282395 1 0 |my_fractal_box_08|
+#add_dispersion_debye: 1 1.50844 9.231e-12 |my_fractal_box_08|
+#material: 6.18766 0.029051 1 0 |my_fractal_box_09|
+#add_dispersion_debye: 1 1.75374 9.231e-12 |my_fractal_box_09|
+#material: 6.4001 0.0297936 1 0 |my_fractal_box_10|
+#add_dispersion_debye: 1 2.00569 9.231e-12 |my_fractal_box_10|
+#material: 6.9 0.0015 1 0 road_base+road_base+sub_base+sub_base
+#material: 4.7 0.001 1 0 base_course+base_course+road_base+road_base
+#material: 4.1 0.001 1 0 wearing_course+wearing_course+base_course+base_course
+#material: 2.3 0.0005 1 0 free_space+free_space+wearing_course+wearing_course
+#material: 21.2 7.5e-06 1 0 water+PE+PE+PE
+#material: 40.8 5e-06 1 0 water+PE+PE+water
+#material: 60.4 2.5e-06 1 0 water+water+PE+water

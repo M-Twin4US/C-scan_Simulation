@@ -1,0 +1,35 @@
+#title: hetero
+#domain: 1.4 0.002 1.3
+#dx_dy_dz: 0.002 0.002 0.002
+#time_window: 50e-9
+#waveform: ricker 1 600e6 my_wave
+
+#hertzian_dipole: y 0.022 0 1.23 my_wave
+#rx: 0.122 0 1.23
+#src_steps: 0.03 0 0
+#rx_steps: 0.03 0 0
+
+###Comment start: Use the block below to generate a stochastic Peplinski model and save it for future simulations. Otherwise, the soil properties will be stochastically regenerated in each iteration. In future simulations, use geometry_objects_read to import the generated files.
+
+##material: 3.6 0.001 1.0 0.0 wearing_course
+##material: 4.6 0.001 1.0 0.0 base_course
+##material: 4.8 0.001 1.0 0.0 road_base
+##material: 9 0.002 1.0 0.0 sub_base
+##material: 5.0 0.002 1 0 sand
+##material: 1.6 0.00001 1 0 PE
+##material: 80 0 1 0 water
+##soil_peplinski: 0.85 0.15 2.0 2.66 0.001 0.05 my_soil
+##fractal_box: 0 0 0 1.4 0.002 0.8 0 0 0 0 10 my_soil my_fractal_box
+##box: 0 0 1.19 1.4 0.002 1.23 wearing_course y
+##box: 0 0 1.125 1.4 0.002 1.19 base_course y
+##box: 0 0 0.95 1.4 0.002 1.125 road_base y
+##box: 0 0 0.8 1.4 0.002 0.95 sub_base y
+##box: 0 0 0 1.4 0.002 0.8 sand y
+##cylinder: 0.7 0 0.4 0.7 0.002 0.4 0.05 PE
+##cylinder: 0.7 0 0.4 0.7 0.002 0.4 0.04 water
+##geometry_objects_write: 0 0 0 1.4 0.002 1.3 hetero
+##geometry_view: 0 0 0 1.4 0.002 1.3 0.002 0.002 0.002 hetero n
+
+###Comment end
+
+#geometry_objects_read: 0 0 0 hetero.h5 hetero_materials.txt
